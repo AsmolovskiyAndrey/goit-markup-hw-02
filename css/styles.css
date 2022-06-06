@@ -1,0 +1,51 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--text-bgc-white-color);
+    color: var(--text-grey-color);
+}
+/* color: #2196F3; голубой цвет текста */
+/* color: #212121; основной цвет текста чёрный (заголовки) */
+/* color: #757575; основной цвет текста серый (р)*/
+/* color: #FFFFFF; белый цвет текста */
+/* color: rgba(255, 255, 255, 0.6); футер мыло и телефон */
+:root{
+    --text-blue-color: #2196F3;
+    --title-black-color: #212121;
+    --logo-text-color: #000000;
+    --text-grey-color: #757575;
+    --text-bgc-white-color: #FFFFFF;
+    --adress-grey-capacity: rgba(255, 255, 255, 0.6);
+}
+/* Убрал точки со списков ul */
+ul{
+    list-style: none;
+}
+
+
+.header{
+
+}
+/* logo */
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;  
+    letter-spacing: 0.03em;
+}
+.logo-one{
+    color: var(--text-blue-color);
+}
+.logo-two {
+    color: var(--logo-text-color);
+}
+/* navigation */
+.navigation{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--title-black-color);
+}
