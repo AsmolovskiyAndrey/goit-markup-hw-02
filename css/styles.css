@@ -1,9 +1,10 @@
 body{
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     background-color: var(--text-bgc-white-color);
     color: var(--text-grey-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.15;
 }
 /* color: #2196F3; голубой цвет текста */
 /* color: #212121; основной цвет текста чёрный (заголовки) */
@@ -11,6 +12,7 @@ body{
 /* color: #FFFFFF; белый цвет текста */
 /* color: rgba(255, 255, 255, 0.6); футер мыло и телефон */
 /* background: #2F303A; футер фон */
+/* background: #F5F4FA; фон серй */
 :root{
     --text-blue-color: #2196F3;
     --title-black-color: #212121;
@@ -18,7 +20,8 @@ body{
     --text-grey-color: #757575;
     --text-bgc-white-color: #FFFFFF;
     --adress-grey-capacity: rgba(255, 255, 255, 0.6);
-    --footer-bgc:#2F303A;
+    --dark-bgc:#2F303A;
+    --light-grey-bgc: #F5F4FA;
 }
 /* Убрал точки со списков ul */
 ul{
@@ -28,17 +31,12 @@ ul{
 a{
     text-decoration: none;
 }
-
-.header{
-
-}
 /* logo */
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;  
-    letter-spacing: 0.03em;
+    line-height: 1.2;
 }
 .logo-one{
     color: var(--text-blue-color);
@@ -52,67 +50,109 @@ a{
 /* nav */
 .nav .nav-link{
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--title-black-color);
 }
 .nav-link.active{
     color: var(--text-blue-color)
 }
-/* adress */
+/* adress header */
 .adress .adress-link{
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
     letter-spacing: 0.02em;
-    color: var(--text-grey-color);
 }
 .nav .nav-link:hover,
 .nav .nav-link:focus,
 .adress .adress-link:hover,
-.adress .adress-link:focus{
+.adress .adress-link:focus,
+.footer-link:hover,
+.footer-link:focus{
     color: var(--text-blue-color);
 }
 
 
-/* hero */
+/* hero index*/
+.hero{
+    background-color: var(--dark-bgc);
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-bgc-white-color);
+    text-align: center;  
+}
 .hero-button{
+    font-family: inherit;
     color: var(--text-bgc-white-color);
     background-color: var(--text-blue-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
-/* benefits */
+/* benefits index*/
  .benefits-title{
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-black-color)
  }
  .benefits-text{
-        font-size: 14px;
-        line-height: 24px;   
-        letter-spacing: 0.03em;   
-        color: var(--text-grey-color);
+    line-height: 1.7;      
  }
-
-
-
+ /* working index*/
+ .working-title,
+ .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-black-color);
+    text-align: center;
+ }
+ /* team index*/
+ .team{
+    background-color: var(--light-grey-bgc);
+ }
+ .team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-black-color)
+ }
+.team-prof{
+    font-size: 16px;
+    line-height: 1.19;
+}
+/* filter portfolio */
+.filter-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    color: var(--title-black-color);
+    background-color: var(--light-grey-bgc);
+}
+.filter-button:hover,
+.filter-button:focus{
+    color: var(--text-bgc-white-color);
+    background-color: var(--text-blue-color);
+}
  /* FOOTER */
  .footer{
-     background-color: var(--footer-bgc)
+     background-color: var(--dark-bgc);
  }
   .footer-address {
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
+      line-height: 1.7;
       color: var(--text-bgc-white-color);
   }
  .footer-link{
     font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: var(--adress-grey-capacity)
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--adress-grey-capacity)
  }
