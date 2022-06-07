@@ -10,6 +10,7 @@ body{
 /* color: #757575; основной цвет текста серый (р)*/
 /* color: #FFFFFF; белый цвет текста */
 /* color: rgba(255, 255, 255, 0.6); футер мыло и телефон */
+/* background: #2F303A; футер фон */
 :root{
     --text-blue-color: #2196F3;
     --title-black-color: #212121;
@@ -17,12 +18,16 @@ body{
     --text-grey-color: #757575;
     --text-bgc-white-color: #FFFFFF;
     --adress-grey-capacity: rgba(255, 255, 255, 0.6);
+    --footer-bgc:#2F303A;
 }
 /* Убрал точки со списков ul */
 ul{
     list-style: none;
 }
-
+/* Убрал подчёркивание со ссылок */
+a{
+    text-decoration: none;
+}
 
 .header{
 
@@ -41,11 +46,73 @@ ul{
 .logo-two {
     color: var(--logo-text-color);
 }
-/* navigation */
-.navigation{
+.logo-three {
+    color: var(--text-bgc-white-color);
+}
+/* nav */
+.nav .nav-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--title-black-color);
 }
+.nav-link.active{
+    color: var(--text-blue-color)
+}
+/* adress */
+.adress .adress-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--text-grey-color);
+}
+.nav .nav-link:hover,
+.nav .nav-link:focus,
+.adress .adress-link:hover,
+.adress .adress-link:focus{
+    color: var(--text-blue-color);
+}
+
+
+/* hero */
+.hero-button{
+    color: var(--text-bgc-white-color);
+    background-color: var(--text-blue-color);
+}
+
+/* benefits */
+ .benefits-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-black-color)
+ }
+ .benefits-text{
+        font-size: 14px;
+        line-height: 24px;   
+        letter-spacing: 0.03em;   
+        color: var(--text-grey-color);
+ }
+
+
+
+ /* FOOTER */
+ .footer{
+     background-color: var(--footer-bgc)
+ }
+  .footer-address {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: var(--text-bgc-white-color);
+  }
+ .footer-link{
+    font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: var(--adress-grey-capacity)
+ }
