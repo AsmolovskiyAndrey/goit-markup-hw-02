@@ -24,11 +24,11 @@ body{
     --light-grey-bgc: #F5F4FA;
 }
 /* Убрал точки со списков ul */
-ul{
+.list{
     list-style: none;
 }
 /* Убрал подчёркивание со ссылок */
-a{
+.link{
     text-decoration: none;
 }
 /* logo */
@@ -141,6 +141,18 @@ a{
 .filter-button:focus{
     color: var(--text-bgc-white-color);
     background-color: var(--text-blue-color);
+}
+/* projects portfolio */
+.projects-title{
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--title-black-color);
+}
+.projects-text {
+    font-size: 16px;
+    line-height: 1.89;
+    color: var(--text-grey-color);
 }
  /* FOOTER */
  .footer{
